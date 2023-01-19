@@ -1,0 +1,152 @@
+{
+    "traits": {
+        "artificers lore": {
+            "traits": "Artificer's Lore: Whenever you make an Intelligence check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply."
+        },
+        "brave": {
+            "traits": "Brave. You have advantage on saving throws against being frightened."
+        },
+        "breath weapon": {
+            "traits": "When you use your breath weapon, each creature in the area of the exhalation must make a saving throw, the type of which is determined by your draconic ancestry. The DC for this saving throw equals 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increases to 3d6 at 6th level, 4d6 at 11th level, and 5d6 at 16th level. After you use your breath weapon, you can't use it again until you complete a short or long rest."
+        },
+        "damage resistance": {
+            "traits": "Damage Resistance. You have resistance to the damage type associated with your draconic ancestry."
+        },
+        "darkvision": {
+            "traits": "Darkvision: You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+        },
+        "dragon: black": {
+            "traits": "Draconic Ancestry: You have draconic ancestry. Black Dragon. Acid Breath - 2 by 10 m. line (Dex. save)"
+        },
+        "dragon: blue": {
+            "traits": "Draconic Ancestry: You have draconic ancestry. Blue Dragon. Lightning Breath - 2 by 10 m. line (Dex. save)"
+        },
+        "dragon: brass": {
+            "traits": "Draconic Ancestry: You have draconic ancestry. Brass Dragon. Fire Breath - 2 by 10 m. line (Dex. save)"
+        },
+        "dragon: bronze": {
+            "traits": "Draconic Ancestry: You have draconic ancestry. Bronze Dragon. Lightning Breath - 2 by 10 m. line (Dex. save)"
+        },
+        "dragon: copper": {
+            "traits": "Draconic Ancestry: You have draconic ancestry. Copper Dragon. Acid Breath - 2 by 10 m. line (Dex. save)"
+        },
+        "dragon: gold": {
+            "traits": "Draconic Ancestry: You have draconic ancestry. Gold Dragon. Fire Breath - 5 m. cone (Dex. save)"
+        },
+        "dragon: green": {
+            "traits": "Draconic Ancestry: You have draconic ancestry. Green Dragon. Poison Breath - 5 m. cone (Dex. save)"
+        },
+        "dragon: red": {
+            "traits": "Draconic Ancestry: You have draconic ancestry. Red Dragon. Fire Breath - 5 m. cone (Dex. save)"
+        },
+        "dragon: silver": {
+            "traits": "Draconic Ancestry: You have draconic ancestry. Silver Dragon. Ice Breath - 5 m. cone (Dex. save)"
+        },
+        "dragon: white": {
+            "traits": "Draconic Ancestry: You have draconic ancestry. White Dragon. Ice Breath - 5 m. cone (Dex. save)"
+        },
+        "drow magic": {
+            "traits": "Drow Magic. You know the Dancing Lights cantrip. When you reach 3rd level, you can cast the Faerie Fire spell once with this trait and regain the ability to do so when you finish a long rest. When you reach 5th level, you can cast the Darkness spell onceand regain the ability to do so when you finish a long rest. Charisma is your spellcasting ability for these spells."
+        },
+        "drow weapon training": {
+            "weapon_proficiency": [
+                "rapiers",
+                "shortswords",
+                "hand crossbows"
+            ]
+        },
+        "dwarven armor training": {
+            "armor_proficiency": [
+                "light armor",
+                "medium armor"
+            ]
+        },
+        "dwarven resilience": {
+            "traits": "Dwarven Resilience: You have advantage on saving throws against poison, and you have resistance against poison damage."
+        },
+        "dwarven toughness": {
+            "traits": "Dwarven Toughness: Your hit point maximum increases by 1, and it increases by 1 every time you gain a level."
+        },
+        "elf weapon training": {
+            "weapon_proficiency": [
+                "longsword",
+                "shortsword",
+                "shortbow",
+                "longbow."
+            ]
+        },
+        "extra language": {
+            "traits": "Extra Language. You can speak, read, and write one extra language of your choice."
+        },
+        "fleet of foot": {
+            "speed": 5
+        },
+        "fey ancestry": {
+            "traits": "Fey Ancestry: You have advantage on saving throws against being charmed, and magic can't put you to sleep."
+        },
+        "gnome cunning": {
+            "traits": "Gnome Cunning: You have advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+        },
+        "hellish resistance":{
+            "traits":"Hellish Resistance: You have resistance to fire damage."
+        },
+        "infernal legacy":{
+            "traits":"Infernal Legacy: You know the Thaumaturgy cantrip. When you reach 3rd Level, you can cast the Hellish Rebuke spell as a 2nd-level spell once with this trait and regain the ability to do so when you finish a Long Rest. When you reach 5th Level, you can cast the Darkness spell once with this trait and regain the ability to do so when you finish a Long Rest. Charisma is your Spellcasting ability for these Spells."
+        },
+        "keen senses": {
+            "traits": "Keen Senses: You have proficiency in the Perception skill."
+        },
+        "lucky": {
+            "other": "Lucky: When you roll a 1 on the d20 for an attack roll, ability check, or saving throw, you can reroll the die and must use the new roll."
+        },
+        "mask of the wild": {
+            "traits": "Mask of the Wild: You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+        },
+        "menacing":{
+            "traits":"You gain proficiency in the Intimidation skill."
+
+        },
+        "natural illusionist":{
+            "traits":"Natural Illusionist: You know the minor illusion cantrip. Intelligence is your spellcasting ability for it."
+        },
+        "naturally stealthy": {
+            "traits": "Naturally Stealthy. You can attempt to hide even when you are only obscured by a creature that is at least one size larger than you."
+        },
+        "nimble": {
+            "traits": "Nimble. You can move through the space of any creature that is of a size larger than yours."
+        },
+        "relentless endurance":{
+            "traits":"Relentless Endurance: When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest"
+        },
+        "savage attacks":{
+            "traits":"Savage Attacks: When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."
+        },
+        "skill versatility":{
+            "traits":"Skill Versatility: You gain proficiency in two skills of your choice."
+        },
+        "speak with small beasts":{
+            "traits": "Speak with Small Beasts: Through sounds and gestures, you can communicate simple ideas with Small or smaller beasts. Forest gnomes love animals and often keep squirrels, badgers, rabbits, moles, woodpeckers, and other creatures as beloved pets."
+        },
+        "stonecunning": {
+            "traits": "Stonecunning: Whenever you make an Intelligence (History) check related to the origin of stonework, you are considered proficient in the History skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus"
+        },
+        "sunlight sensistivity": {
+            "traits": "Sunlight Sensitivity: You have disadvantage on attack rolls and Wisdom (Perception) checks that rely on sight when you, the target of the attack, or whatever you are trying to perceive is in direct sunlight."
+        },
+        "superior darkvision": {
+            "traits": "Superior Darkvision: Your darkvision has a range of 120 feet, instead of 60."
+        },
+        "tinker": {
+            "traits": [
+                "Tinker: Using tinker's tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time.When you create a device, choose one of the following options:",
+                "Clockwork Toy. This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 2 metres across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents. Fire Starter. The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action. Music Box. When opened, this music box plays a single song at moderate volume. The box stops playing when it reaches the song's end or when it is close."
+            ]
+        },
+        "trance": {
+            "traits": "Trance: Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is “trance.”) While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep."
+        },
+        "two random traits": {
+            "traits": "add two random traits"
+        }
+    }
+}

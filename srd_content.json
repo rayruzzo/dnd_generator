@@ -1,0 +1,31 @@
+{
+    "SRD Content":{
+        "age_modifiers":{
+                "middle": {
+                    "str": -1,
+                    "dex":-1,
+                    "con":-1,
+                    "int":1,
+                    "wis":1,
+                    "cha":1
+                },
+                "old": {
+                    "str": -2,
+                    "dex":-2,
+                    "con":-2,
+                    "int":1,
+                    "wis":1,
+                    "cha":1
+                },
+                "venerable": {
+                    "str": -3,
+                    "dex":-3,
+                    "con":-3,
+                    "int":1,
+                    "wis":1,
+                    "cha":1
+                }
+
+            }
+        }
+    }
