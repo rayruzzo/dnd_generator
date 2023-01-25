@@ -1,0 +1,331 @@
+{
+    "weapons":{
+        "club": {
+            "difficulty": "simple",
+            "weapon_class": "melee",
+            "cost": {"sp": 1},
+            "damage_dice": [4],
+            "damage_type": "bludgeoning",
+            "weight": 2,
+            "properties": ["light"]
+
+        },
+        "dagger": {
+            "difficulty": "simple",
+            "weapon_class": "melee",
+            "cost": {"gp":2},
+            "damage_dice": [4],
+            "damage_type": "piercing",
+            "weight": 1,
+            "properties":["finesse","light","thrown - range: 20/60"]
+        },
+        "greatclub": {
+            "difficulty": "simple",
+            "weapon_class": "melee",
+            "cost": {"sp":2},
+            "damage_dice":[8],
+            "damage_type":"bludgeoning",
+            "weight":10,
+            "properties":["two-handed"]
+        },
+        "handaxe":{
+            "difficulty": "simple",
+            "weapon_class":"melee",
+            "cost":{"gp":5},
+            "damage_dice":[6],
+            "damage_type":"slashing",
+            "weight":2,
+            "properties":["light", "thrown - range: 20/60"]
+        },
+        "javelin":{
+            "difficulty": "simple",
+            "weapon_class": "melee",
+            "cost": {"sp":5},
+            "damage_dice":[6],
+            "damage_type":"piercing",
+            "weight":2,
+            "properties":["thrown - range: 30/120"]
+        },
+        "light hammer": {
+            "difficulty": "simple",
+            "weapon_class": "melee",
+            "cost": {"gp":2},
+            "damage_dice":[4],
+            "damage_type":"bludgeoning",
+            "weight":2,
+            "properties":["light","thrown - range: 20/60"]
+        },
+        "mace":{
+            "difficulty": "simple",
+            "weapon_class": "melee",
+            "cost": {"gp":5},
+            "damage_dice":[6],
+            "damage_type":"bludgeoning",
+            "weight":4,
+            "properties":[]
+        },
+        "quarterstaff":{
+            "difficulty": "simple",
+            "weapon_class": "melee",
+            "cost": {"sp":2},
+            "damage_dice":[6],
+            "damage_type":"bludgeoning",
+            "weight":4,
+            "properties":["versatile - 1d8"]
+        },
+        "sickle": {
+            "difficulty": "simple" ,
+            "weapon_class": "melee",
+            "cost": {"gp":1},
+            "damage_dice":[4],
+            "damage_type":"slashing",
+            "weight":2,
+            "properties":["light"]
+        },
+        "spear":{
+            "difficulty": "simple",
+            "weapon_class": "melee",
+            "cost": {"gp":1},
+            "damage_dice":[6],
+            "damage_type":"piercing",
+            "weight":3,
+            "properties":["thrown - range: 20/60", "versatile - 1d8"]
+
+        },
+        "crossbow - light":{
+            "difficulty": "simple",
+            "weapon_class": "ranged",
+            "cost":{"gp":25},
+            "damage_dice":[8],
+            "damage_type":"piercing",
+            "weight":5,
+            "properties":["ammunition - range(80/320)", "loading","two-handed"]
+        },
+        "dart":{
+            "difficulty": "simple",
+            "weapon_class":"ranged",
+            "cost":{"cp":5},
+            "damage_dice":[4],
+            "damage_type":"piercing",
+            "weight":0,
+            "properties":["finesse","thrown - range: 20/60"]
+        },
+        "shortbow":{
+            "difficulty": "simple",
+            "weapon_class": "ranged",
+            "cost": {"gp": 25},
+            "damage_dice":[6],
+            "damage_type":"piercing",
+            "weight":2,
+            "properties":["ammunition - range(80/320)","two-handed"]
+        },
+        "sling":{
+            "difficulty": "simple",
+            "weapon_class": "ranged",
+            "cost": {"sp":1},
+            "damage_dice":[4],
+            "damage_type":"bludgeoning",
+            "weight":0,
+            "properties":["ammunition - range(30/120)"]
+
+        },
+        "battleaxe":{
+            "difficulty": "martial",
+            "weapon_class":"melee",
+            "cost":{"gp":10},
+            "damage_dice":[8],
+            "damage_type":"slashing",
+            "weight":4,
+            "properties":["versatile - 1d10"]
+        },
+        "flail": {
+            "difficulty": "martial",
+            "weapon_class": "melee",
+            "cost":{"gp":10},
+            "damage_dice":[8],
+            "damage_type":"bludgeoning",
+            "weight":2,
+            "properties":[]
+        },
+        "glaive":{
+            "difficulty": "martial",
+            "weapon_class": "melee",
+            "cost":{"gp":20},
+            "damage_dice":[10],
+            "damage_type":"slashing",
+            "weight":6,
+            "properties":["heavy", "two-handed","reach"]
+        },
+        "greataxe":{
+            "difficulty": "martial",
+            "weapon_class":"melee",
+            "cost":{"gp":30},
+            "damage_dice":[12],
+            "damage_type":"slashing",
+            "weight":7,
+            "properties":["heavy","two-handed"]
+        },
+        "greatsword":{
+            "difficulty": "martial",
+            "weapon_class": "melee",
+            "cost":{"gp":50},
+            "damage_dice": [6, 6],
+            "damage_type":"slashing",
+            "weight":6,
+            "properties":["heavy","two-handed"]
+        },
+        "halberd":{
+            "difficulty": "martial",
+            "weapon_class": "melee",
+            "cost":{"gp":20},
+            "damage_dice":[10],
+            "damage_type":"slashing",
+            "weight":6,
+            "properties":["heavy","reach","two-handed"]
+        },
+        "lance":{
+            "difficulty": "martial",
+            "weapon_class": "melee",
+            "cost":{"gp":19},
+            "damage_dice":[12],
+            "damage_type":"piercing",
+            "weight":6,
+            "properties":["reach","special"]
+        },
+        "longsword":{
+            "difficulty": "martial",
+            "weapon_class":"melee",
+            "cost":{"gp":16},
+            "damage_dice":[8],
+            "damage_type":"slashing",
+            "weight":3,
+            "properties":["versatile - 1d10"]
+        },
+        "maul":{
+            "difficulty": "martial",
+            "weapon_class": "melee",
+            "cost":{"gp":10},
+            "damage_dice":[6, 6],
+            "damage_type": "bludgeoning",
+            "weight": 10,
+            "properties":["heavy","two-handed"]
+        },
+        "morningstar":{
+            "difficulty": "martial",
+            "weapon_class":"melee",
+            "cost":{"gp":15},
+            "damage_dice":[8],
+            "damage_type":"piercing",
+            "weight":4,
+            "properties":[]
+        },
+        "pike":{
+            "difficulty": "martial",
+            "weapon_class":"melee",
+            "cost":{"gp":5},
+            "damage_dice":[10],
+            "damage_type":"piercing",
+            "weight":18,
+            "properties":["heavy","reach","two-handed"]
+        },
+        "rapier":{
+            "difficulty": "martial",
+            "weapon_class":"melee",
+            "cost":{"gp":25},
+            "damage_dice":[8],
+            "damage_type":"piercing",
+            "weight":2,
+            "properties":["finesse"]
+        },
+        "scimitar":{
+            "difficulty": "martial",
+            "weapon_class":"melee",
+            "cost":{"gp":25},
+            "damage_dice":[6],
+            "damage_type":"slashing",
+            "weight":3,
+            "properties":["finesse","light"]
+        },
+        "shortsword":{
+            "difficulty": "martial",
+            "weapon_class":"melee",
+            "cost":{"gp":10},
+            "damage_dice":[6],
+            "damage_type":"piercing",
+            "weight":2,
+            "properties":["finesse","light"]
+        },
+        "trident":{
+            "difficulty": "martial",
+            "weapon_class":"melee",
+            "cost":{"gp":5},
+            "damage_dice":[6],
+            "damage_type":"piercing",
+            "weight":4,
+            "properties":["versatile - 1d8","thrown - range: 20/60"]
+        },
+        "war pick":{
+            "difficulty": "martial",
+            "weapon_class":"melee",
+            "cost":{"gp": 5},
+            "damage_dice":[8],
+            "damage_type":"piercing",
+            "weight":2,
+            "properties":[]
+        },
+        "warhammer":{
+            "difficulty": "martial",
+            "weapon_class":"melee",
+            "cost":{"gp":15},
+            "damage_dice":[8],
+            "damage_type":"bludgeoning",
+            "weight":2,
+            "properties":["versatile - 1d10"]
+        },
+        "whip":{
+            "difficulty": "martial",
+            "weapon_class":"melee",
+            "cost":{"gp":2},
+            "damage_dice":[4],
+            "damage_type":"slashing",
+            "weight":3,
+            "properties":["finesse","reach"]
+        },
+        "blowgun": {
+            "difficulty": "martial",
+            "weapon_class":"ranged",
+            "cost":{"gp":10},
+            "damage_dice":[1],
+            "damage_type":"piercing",
+            "weight":1,
+            "properties":["ammunition - range(25/100)"]
+        },
+        "crossbow - hand":{
+            "difficulty": "martial",
+            "weapon_class":"ranged",
+            "cost":{"gp":75},
+            "damage_dice":[6],
+            "damage_type":"piercing",
+            "weight":3,
+            "properties":["ammunition - range(30/120)", "light","loading"]
+        },
+        "crossbow - heavy":{
+            "difficulty": "martial",
+            "weapon_class":"ranged",
+            "cost":{"gp":50},
+            "damage_dice":[10],
+            "damage_type":"piercing",
+            "weight":18,
+            "properties":["ammunition - range(100/400)","loading","heavy","two-handed"]
+        },
+        "longbow":{
+            "difficulty": "martial",
+            "weapon_class":"ranged",
+            "cost":{"gp":50},
+            "damage_dice":[8],
+            "damage_type":"piercing",
+            "weight":2,
+            "properties":["ammunition - range(150/600)", "heavy","two-handed"]
+        }
+    }
+}

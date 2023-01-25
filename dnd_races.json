@@ -13,16 +13,16 @@
                     "venerable": 250
                 }
             },
-             "size": {
+            "size": {
                 "height_base": 44,
                 "height_mod": [
                     2,
-                    6
+                    4
                 ],
                 "weight_base": 115,
                 "weight_mod": [
-                    1,
-                    10
+                    2,
+                    6
                 ]
             },
             "speed": 25,
@@ -87,12 +87,12 @@
                 "height_base": 53,
                 "height_mod": [
                     2,
-                    8
+                    10
                 ],
                 "weight_base": 85,
                 "weight_mod": [
                     1,
-                    6
+                    4
                 ]
             },
             "speed": 30,
@@ -162,17 +162,17 @@
                     "middle": 50,
                     "old": 70,
                     "venerable": 100
-                    }
-                },
+                }
+            },
             "size": {
                 "height_base": 29,
                 "height_mod": [
                     2,
-                    6
+                    4
                 ],
                 "weight_base": 25,
                 "weight_mod": [
-                    2,
+                    1,
                     2
                 ]
             },
@@ -197,20 +197,22 @@
             "subrace": {
                 "lightfoot": {
                     "score_mod": {
-                        "cha":1
+                        "cha": 1
                     },
-                    "traits": ["naturally stealthy"]
+                    "traits": [
+                        "naturally stealthy"
+                    ]
                 }
             }
         },
         "human": {
             "score_mod": {
-                "str":1,
-                "dex":1,
-                "con":1,
-                "int":1,
-                "wis":1,
-                "cha":1
+                "str": 1,
+                "dex": 1,
+                "con": 1,
+                "int": 1,
+                "wis": 1,
+                "cha": 1
             },
             "age": {
                 "adult": 15,
@@ -218,19 +220,19 @@
                 "phases": {
                     "middle": 35,
                     "old": 53,
-                    "venerable": 70 
-                    }
-                },
+                    "venerable": 70
+                }
+            },
             "size": {
                 "height_base": 53,
                 "height_mod": [
                     2,
-                    12
+                    10
                 ],
-                "weight_base":100,
+                "weight_base": 100,
                 "weight_mod": [
-                    1,
-                    8
+                    2,
+                    4
                 ]
             },
             "speed": 30,
@@ -240,15 +242,16 @@
                 "common"
             ],
             "armor_proficiency": [],
-            "traits": ["extra language"],
+            "traits": [
+                "extra language"
+            ],
             "alignment_affinity": [],
             "subrace": false
-            },
-        
+        },
         "dragonborn": {
             "score_mod": {
-                "str":2,
-                "cha":1
+                "str": 2,
+                "cha": 1
             },
             "age": {
                 "adult": 3,
@@ -256,19 +259,19 @@
                 "phases": {
                     "middle": 20,
                     "old": 50,
-                    "venerable":80 
-                    }
-                },
+                    "venerable": 80
+                }
+            },
             "size": {
                 "height_base": 66,
                 "height_mod": [
                     2,
-                    10
+                    8
                 ],
                 "weight_base": 175,
                 "weight_mod": [
-                    1,
-                    10
+                    2,
+                    6
                 ]
             },
             "speed": 30,
@@ -292,40 +295,60 @@
             ],
             "subrace": {
                 "black": {
-                    "traits": ["dragon: black"]
+                    "traits": [
+                        "dragon: black"
+                    ]
                 },
                 "blue": {
-                    "traits": ["dragon: blue"]
+                    "traits": [
+                        "dragon: blue"
+                    ]
                 },
                 "brass": {
-                    "traits": ["dragon: brass"]
+                    "traits": [
+                        "dragon: brass"
+                    ]
                 },
                 "bronze": {
-                    "traits": ["dragon: bronze"]
+                    "traits": [
+                        "dragon: bronze"
+                    ]
                 },
                 "copper": {
-                    "traits": ["dragon: copper"]
+                    "traits": [
+                        "dragon: copper"
+                    ]
                 },
                 "gold": {
-                    "traits": ["dragon: gold"]
+                    "traits": [
+                        "dragon: gold"
+                    ]
                 },
                 "green": {
-                    "traits": ["dragon: green"]
+                    "traits": [
+                        "dragon: green"
+                    ]
                 },
                 "red": {
-                    "traits": ["dragon: red"]
+                    "traits": [
+                        "dragon: red"
+                    ]
                 },
                 "silver": {
-                    "traits": ["dragon: silver"]
+                    "traits": [
+                        "dragon: silver"
+                    ]
                 },
                 "white": {
-                    "traits": ["dragon: white"]
+                    "traits": [
+                        "dragon: white"
+                    ]
                 }
             }
         },
         "gnome": {
             "score_mod": {
-                "int":2
+                "int": 2
             },
             "age": {
                 "adult": 40,
@@ -333,48 +356,59 @@
                 "phases": {
                     "middle": 100,
                     "old": 150,
-                    "venerable": 200 
-                    }
-                },
+                    "venerable": 200
+                }
+            },
             "size": {
                 "height_base": 35,
                 "height_mod": [
                     2,
-                    6
+                    4
                 ],
-                "weight_base":35,
+                "weight_base": 35,
                 "weight_mod": [
-                    2,
+                    1,
                     2
                 ]
             },
             "speed": 25,
             "weapon_proficiency": [],
-            "tool_proficiency": ["tinker's tools","artisan's tools"],
+            "tool_proficiency": [
+                "tinker's tools",
+                "artisan's tools"
+            ],
             "languages": [
                 "common",
                 "gnomish"
             ],
             "armor_proficiency": [],
-            "traits": ["darkvision","gnome cunning"],
+            "traits": [
+                "darkvision",
+                "gnome cunning"
+            ],
             "alignment_affinity": [
                 "lawful good",
                 "chaotic good",
                 "neutral good",
                 "chaotic neutral"
             ],
-            "subrace":{
-                "rock gnome":{
-                    "score_mod":{
-                        "int":2
+            "subrace": {
+                "rock gnome": {
+                    "score_mod": {
+                        "int": 2
                     },
-                    "traits":["artificers lore","tinker"]
+                    "traits": [
+                        "artificers lore",
+                        "tinker"
+                    ]
                 },
-                "forest gnome":{
-                    "score_mod":{
-                        "dex":1
+                "forest gnome": {
+                    "score_mod": {
+                        "dex": 1
                     },
-                    "traits": ["natural illusionist"]
+                    "traits": [
+                        "natural illusionist"
+                    ]
                 }
             }
         },
@@ -395,12 +429,12 @@
                 "height_base": 57,
                 "height_mod": [
                     2,
-                    10
+                    8
                 ],
                 "weight_base": 110,
                 "weight_mod": [
-                    1,
-                    8
+                    2,
+                    4
                 ]
             },
             "speed": 30,
@@ -441,12 +475,12 @@
                 "height_base": 58,
                 "height_mod": [
                     2,
-                    12
+                    10
                 ],
                 "weight_base": 140,
                 "weight_mod": [
-                    1,
-                    10
+                    2,
+                    6
                 ]
             },
             "speed": 30,
@@ -489,12 +523,12 @@
                 "height_base": 57,
                 "height_mod": [
                     2,
-                    6
+                    8
                 ],
-                "weight_base": 140,
+                "weight_base": 110,
                 "weight_mod": [
                     2,
-                    6
+                    4
                 ]
             },
             "speed": 30,
@@ -519,5 +553,3 @@
         }
     }
 }
-    
-

@@ -1,0 +1,1091 @@
+{
+    "first level dnd classes": {
+        "barbarian": {
+            "hit_die": 12,
+            "hp_base_lv_1": {
+                "init": 8,
+                "modifier": "con"
+            },
+            "proficiency bonus": 2,
+            "armor_proficiency": [
+                "light armor",
+                "medium armor",
+                "shield"
+            ],
+            "weapon_proficiency": [
+                "simple weapons",
+                "martial weapons"
+            ],
+            "tool_proficiency": [],
+            "saving_throw": [
+                "str",
+                "con"
+            ],
+            "skills": {
+                "num": 2,
+                "selection": [
+                    "animal handling",
+                    "athletics",
+                    "intimidation",
+                    "nature",
+                    "perception"
+                ]
+            },
+            "equipment": {
+                "choices": [
+                    [
+                        {
+                            "greataxe": 1
+                        },
+                        {
+                            "any martial melee": 1
+                        }
+                    ],
+                    [
+                        {
+                            "handaxe": 2
+                        },
+                        {
+                            "any simple weapon": 1
+                        }
+                    ]
+                ],
+                "standard": [
+                    {
+                        "explorers pack": 1
+                    },
+                    {
+                        "javelin": 4
+                    }
+                ]
+            },
+            "spells": false,
+            "features": {
+                "rage": [
+                    "Rage. In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. While raging, you gain the following benefits if you aren't wearing heavy armor: You have advantage on Strength checks and Strength saving throws. When you make a melee weapon attack using Strength, you gain a bonus to the damage roll that increases as you gain levels as a barbarian, as shown in the Rage Damage column of the Barbarian table. You have resistance to bludgeoning, piercing, and slashing damage. If you are able to cast spells, you can't cast them or concentrate on them while raging. Your rage lasts for 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage since then. You can also end your rage on your turn as a bonus action. Once you have raged the number of times shown for your barbarian level in the Rages column of the Barbarian table, you must finish a long rest before you can rage again."
+                ]
+            },
+            "subclass": false
+        },
+        "bard": {
+            "hit_die": 8,
+            "hp_base_lv_1": {
+                "init": 8,
+                "modifier": "con"
+            },
+            "hp_base_lv_up": {
+                "init": 5,
+                "modifier": "con"
+            },
+            "proficiency bonus": 2,
+            "armor_proficiency": [
+                "light armor"
+            ],
+            "weapon_proficiency": [
+                "simple weapons",
+                "crossbow - hand",
+                "longsword",
+                "rapier",
+                "shortsword"
+            ],
+            "tool_proficiency": [
+                "musical instrument of choice",
+                "musical instrument of choice",
+                "musical instrument of choice"
+            ],
+            "saving_throw": [
+                "dex",
+                "cha"
+            ],
+            "skills": {
+                "num": 3,
+                "selection": [
+                    "acrobatics",
+                    "animal handling",
+                    "arcana",
+                    "athletics",
+                    "deception",
+                    "history",
+                    "insight",
+                    "intimidation",
+                    "investigation",
+                    "medicine",
+                    "nature",
+                    "perception",
+                    "performance",
+                    "persuasion",
+                    "religion",
+                    "sleight of hand",
+                    "stealth",
+                    "survival"
+                ]
+            },
+            "equipment": {
+                "choices": [
+                    [
+                        {
+                            "rapier": 1
+                        },
+                        {
+                            "longsword": 1
+                        },
+                        {
+                            "any simple weapon": 1
+                        }
+                    ],
+                    [
+                        {
+                            "diplomat's pack": 1
+                        },
+                        {
+                            "entertainer's pack": 1
+                        }
+                    ],
+                    [
+                        {
+                            "lute": 1
+                        },
+                        {
+                            "musical instrument of choice": 1
+                        }
+                    ]
+                ],
+                "standard": [
+                    {
+                        "leather armor": 1
+                    },
+                    {
+                        "dagger": 1
+                    }
+                ]
+            },
+            "spells": {
+                "spell slots": 2,
+                "cantrips known": 2,
+                "spells known": 4,
+                "ability_modifier": "cha",
+                "focus": "musical instrument of choice"
+            },
+            "features": {
+                "bardic inspiration": "Bardic Inspiration: You can inspire others through stirring words or music. To do so, you use a bonus action on your turn to choose one creature other than yourself within 60 feet of you who can hear you. That creature gains one Bardic Inspiration die, a d6. Once within the next 10 minutes, the creature can roll the die and add the number rolled to one ability check, attack roll, or saving throw it makes. The creature can wait until after it rolls the d20 before deciding to use the Bardic Inspiration die, but must decide before the DM says whether the roll succeeds or fails. Once the Bardic Inspiration die is rolled, it is lost. A creature can have only one Bardic Inspiration die at a time.You can use this feature a number of times equal to your Charisma modifier (a minimum of once). You regain any expended uses when you finish a long rest.",
+                "ritual casting": "You can cast any bard spell you know as a ritual if that spell has the ritual tag."
+            }
+        },
+        "cleric": {
+            "hit_die": 8,
+            "hp_base_lv_1": {
+                "init": 8,
+                "modifier": "con"
+            },
+            "proficiency bonus": 2,
+            "armor_proficiency": [
+                "light armor",
+                "medium armor",
+                "shield"
+            ],
+            "weapon_proficiency": [
+                "simple weapons"
+            ],
+            "tool_proficiency": [],
+            "saving_throw": [
+                "wis",
+                "cha"
+            ],
+            "skills": {
+                "num": 2,
+                "selection": [
+                    "history",
+                    "insight",
+                    "medicine",
+                    "persuasion",
+                    "religion"
+                ]
+            },
+            "equipment": {
+                "choices": [
+                    [
+                        {
+                            "scale mail": 1
+                        },
+                        {
+                            "leather armor": 1
+                        }
+                    ],
+                    [
+                        {
+                            "priest's pack": 1
+                        },
+                        {
+                            "explorer's pack": 1
+                        }
+                    ],
+                    [
+                        {
+                            "crossbow - light": 1,
+                            "bolt": 20
+                        },
+                        {
+                            "any simple weapon": 1
+                        }
+                    ]
+                ],
+                "standard": [
+                    {
+                        "shield": 1
+                    },
+                    {
+                        "holy symbol": 1
+                    },
+                    {
+                        "mace": 1
+                    }
+                ]
+            },
+            "spells": {
+                "spell slots": 2,
+                "cantrips known": 3,
+                "spells known": 0,
+                "ability_modifier": "wis",
+                "focus": "holy symbol"
+            },
+            "features": {
+                "ritual casting": "You can cast a cleric spell as a ritual if that spell has the ritual tag and you have the spell prepared."
+            },
+            "subclass": {
+                "life": {
+                    "text": "Divine Domain: Life. The Life domain focuses on the vibrant positive energy — one of the fundamental forces of the universe — that sustains all life. The gods of life promote vitality and health through healing the sick and wounded, caring for those in need, and driving away the forces of death and undeath. Almost any non-evil deity can claim influence over this domain, particularly agricultural deities (such as Chauntea, Arawai, and Demeter), sun gods (such as Lathander, Pelor, and Re-Horakhty), gods of healing or endurance (such as Ilmater, Mishakal, Apollo, and Diancecht), and gods of home and community (such as Hestia, Hathor, and Boldrei).",
+                    "spells": [
+                        "bless",
+                        "cure wounds"
+                    ],
+                    "features": {
+                        "disciple of life": "Disciple of Life. Starting at 1st level, your healing spells are more effective. Whenever you use a spell of 1st level or higher to restore hit points to a creature, the creature regains additional hit points equal to 2 + the spell's level."
+                    },
+                    "armor_proficiency": [
+                        "heavy armor"
+                    ],
+                    "weapon_proficiency": []
+                },
+                "war": {
+                    "text": "Divine Domain: War. War has many manifestations. It can make heroes of ordinary people. It can be desperate and horrific, with acts of cruelty and cowardice eclipsing instances of excellence and courage. In either case, the gods of war watch over warriors and reward them for their great deeds. The clerics of such gods excel in battle, inspiring others to fight the good fight or offering acts of violence as prayers. Gods of war include champions of honor and chivalry (such as Torm, Heironeous, and Kiri-Jolith) as well as gods of destruction and pillage (such as Erythnul, the Fury, Gruumsh, and Ares) and gods of conquest and domination (such as Bane, Hextor, and Maglubiyet). Other war gods (such as Tempus, Nike, and Nuada) take a more neutral stance, promoting war in all its manifestations and supporting warriors in any circumstance.",
+                    "spells": [
+                        "divine favor",
+                        "shield of faith"
+                    ],
+                    "features": {
+                        "war priest": "From 1st level, your god delivers bolts of inspiration to you while you are engaged in battle. When you use the Attack action, you can make one weapon attack as a bonus action. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
+                    },
+                    "weapon_proficiency": [
+                        "martial weapons"
+                    ],
+                    "armor_proficiency": [
+                        "heavy armor"
+                    ]
+                },
+                "knowledge": {
+                    "text": "Divine Domain: Knowledge. The gods of knowledge including Oghma, Boccob, Gilean, Aureon, and Thoth value learning and understanding above all. Some teach that knowledge is to be gathered and shared in libraries and universities, or promote the practical knowledge of craft and invention. Some deities hoard knowledge and keep its secrets to themselves. And some promise their followers that they will gain tremendous power if they unlock the secrets of the multiverse. Followers of these gods study esoteric lore, collect old tomes, delve into the secret places of the earth, and learn all they can. Some gods of knowledge promote the practical knowledge of craft and invention, including smith deities like Gond, Reorx, Onatar, Moradin, Hephaestus, and Goibhniu. In Amonkhet, knowledge is the second virtue of society. Kefnet's task is to pass on this teaching of the God-Pharaoh and elucidate its meaning. He teaches that the afterlife will be inhabited only by those who have proved by their wits that they are worthy of dwelling in the glorious presence of the God-Pharaoh. He trains acolytes and initiates to push their limits and challenge their mental capacity with spells of ever-greater power.",
+                    "spells": [
+                        "command",
+                        "identify"
+                    ],
+                    "features": {
+                        "blessings of knowledge": "Blessings of Knowledge. At 1st level, you learn two languages of your choice. You also become proficient in your choice of two of the following skills: Arcana, History, Nature, or Religion. Your proficiency bonus is doubled for any ability check you make that uses either of those skills. (Add manually)"
+                    },
+                    "weapon_proficiency": false,
+                    "armor_proficiency": false
+                },
+                "light": {
+                    "text": "Divine Domain: Light. Gods of light including Helm, Lathander, Pholtus, Branchala, the Silver Flame, Belenus, Apollo, and Re-Horakhty promote the ideals of rebirth and renewal, truth, vigilance, and beauty, often using the symbol of the sun. Some of these gods are portrayed as the sun itself or as a charioteer who guides the sun across the sky. Others are tireless sentinels whose eyes pierce every shadow and see through every deception. Some are deities of beauty and artistry, who teach that art is a vehicle for the soul's improvement. Clerics of a god of light are enlightened souls infused with radiance and the power of their gods' discerning vision, charged with chasing away lies and burning away darkness.",
+                    "spells": [
+                        "burning hands",
+                        "faerie fire"
+                    ],
+                    "features": {
+                        "bonus cantrip": "Bonus Cantrip: When you choose this domain at 1st level, you gain the Light cantrip if you don't already know it. This cantrip doesn't count against the number of cleric cantrips you know.",
+                        "warding flare": "Warding Flare: Also at 1st level, you can interpose divine light between yourself and an attacking enemy. When you are attacked by a creature within 30 feet of you that you can see, you can use your reaction to impose disadvantage on the attack roll, causing light to flare before the attacker before it hits or misses. An attacker that can't be blinded is immune to this feature. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
+                    },
+                    "weapon_proficiency": false,
+                    "armor_proficiency": false
+                },
+                "nature": {
+                    "text": "Divine Domain: Nature. Gods of nature are as varied as the natural world itself; from inscrutable gods of the deep forests (such as Silvanus, Obad-Hai, Chislev, Balinor, and Pan) to friendly deities associated with particular springs and groves (such as Eldath). Druids revere nature as a whole and might serve one of these deities, practicing mysterious rites and reciting all-but-forgotten prayers in their own secret tongue. But many of these gods have clerics as well, champions who take a more active role in advancing the interests of a particular nature god. These clerics might hunt the evil monstrosities that despoil the woodlands, bless the harvest of the faithful, or wither the crops of those who anger their gods.",
+                    "spells": [
+                        "animal friendship",
+                        "speak with animals"
+                    ],
+                    "features": {
+                        "acolyte of nature": "Acolyte of Nature. At 1st level, you learn one cantrip of your choice from the druid spell list. This cantrip counts as a cleric cantrip for you, but it doesn't count against the number of cleric cantrips you know. You also gain proficiency in one of the following skills of your choice: Animal Handling, Nature, or Survival. (add manually)"
+                    },
+                    "weapon_proficiency": [],
+                    "armor_proficiency": [
+                        "heavy armor"
+                    ]
+                },
+                "tempest": {
+                    "text": "Divine Domain: Tempest. Gods whose portfolios include the Tempest domain - including Talos, Umberlee, Kord, Zeboim, the Devourer, Zeus, and Thor - govern storms, sea, and, sky. They include gods of lightning and thunder, gods of earthquakes, some fire gods, and certain gods of violence, physical strength, and courage. In some pantheons, a god of this domain rules over other deities and is known for swift justice delivered by thunderbolts. In the pantheons of seafaring people, gods of this domain are ocean deities and the patrons of sailors. Tempest gods send their clerics to inspire fear in the common folk, either to keep those folk on the path of righteousness or to encourage them to offer sacrifices of propitiation to ward off divine wrath.",
+                    "spells": [
+                        "fog cloud",
+                        "thunderwave"
+                    ],
+                    "features": {
+                        "wrath of the storm": "Wrath of the Storm: Also at 1st level, you can thunderously rebuke attackers. When a creature within 5 feet of you that you can see hits you with an attack, you can use your reaction to cause the creature to make a Dexterity saving throw. The creature takes 2d8 lightning or thunder damage (your choice) on a failed saving throw, and half as much damage on a successful one. You can use this feature a number of times equal to your Wisdom modifier (a minimum of once). You regain all expended uses when you finish a long rest."
+                    },
+                    "weapon_proficiency": [
+                        "martial weapons"
+                    ],
+                    "armor_proficiency": [
+                        "heavy armor"
+                    ]
+                },
+                "trickery": {
+                    "text": "Divine Domain: Trickery. Gods of trickery - such as Tymora, Beshaba, Olidammara, the Traveler, Garl Glittergold, and Loki - are mischief-makers and instigators who stand as a constant challenge to the accepted order among both gods and mortals. They're patrons of thieves, scoundrels, gamblers, rebels, and liberators. Their clerics are a disruptive force in the world, puncturing pride, mocking tyrants, stealing from the rich, freeing captives, and flouting hollow traditions. They prefer subterfuge, pranks, deception, and theft rather than direct confrontation.",
+                    "spells": [
+                        "charm person",
+                        "disguise self"
+                    ],
+                    "features": {
+                        "blessing of the trickster": "Blessing of the Trickster: Starting when you choose this domain at 1st level, you can use your action to touch a willing creature other than yourself to give it advantage on Dexterity (Stealth) checks. This blessing lasts for 1 hour or until you use this feature again."
+                    },
+                    "weapon_proficiency": [],
+                    "armor_proficiency": []
+                }
+            }
+        },
+        "druid": {
+            "hit_die": 8,
+            "hp_base_lv_1": {
+                "init": 8,
+                "modifier": "con"
+            },
+            "proficiency bonus": 2,
+            "armor_proficiency": [
+                "light armor",
+                "medium armor",
+                "shield",
+                "druids will not use metal armor."
+            ],
+            "weapon_proficiency": [
+                "club",
+                "dagger",
+                "dart",
+                "javelin",
+                "mace",
+                "quarterstaff",
+                "scimitar",
+                "sickle",
+                "sling",
+                "spear"
+            ],
+            "tool_proficiency": [
+                "herbalism kit"
+            ],
+            "saving_throw": [
+                "int",
+                "wis"
+            ],
+            "skills": {
+                "num": 2,
+                "selection": [
+                    "arcana",
+                    "animal handling",
+                    "insight",
+                    "medicine",
+                    "nature",
+                    "perception",
+                    "religion",
+                    "survival"
+                ]
+            },
+            "equipment": {
+                "choices": [
+                    [
+                        {
+                            "scimitar": 1
+                        },
+                        {
+                            "any simple melee": 1
+                        }
+                    ],
+                    [
+                        {
+                            "wooden shield": 1
+                        },
+                        {
+                            "any simple weapon": 1
+                        }
+                    ]
+                ],
+                "standard": [
+                    {
+                        "explorers pack": 1
+                    },
+                    {
+                        "leather armor": 1
+                    },
+                    {
+                        "druidic focus": 1
+                    }
+                ]
+            },
+            "spells": {
+                "cantrips known": 2,
+                "spell slots": 2,
+                "spells known": 0,
+                "ability_modifier": "wis",
+                "focus": "druicid focus"
+            },
+            "features": {
+                "druidic": "Druidic. You know Druidic, the secret language of druids. You can speak the language and use it to leave hidden messages. You and others who know this language automatically spot such a message. Others spot the message's presence with a successful DC 15 Wisdom (Perception) check but can't decipher it without magic.",
+                "spellcasting": "Spellcasting. Drawing on the divine essence of nature itself, you can cast spells to shape that essence to your will.",
+                "ritual casting": "You can cast a druid spell as a ritual if that spell has the ritual tag and you have the spell prepared."
+            },
+            "subclass": false
+        },
+        "fighter": {
+            "hit_die": 10,
+            "hp_base_lv_1": {
+                "init": 10,
+                "modifier": "con"
+            },
+            "proficiency bonus": 2,
+            "armor_proficiency": [
+                "all armor",
+                "shield"
+            ],
+            "weapon_proficiency": [
+                "simple weapons",
+                "martial weapons"
+            ],
+            "tool_proficiency": [],
+            "saving_throw": [
+                "str",
+                "con"
+            ],
+            "skills": {
+                "num": 2,
+                "selection": [
+                    "acrobatics",
+                    "animal handling",
+                    "athletics",
+                    "history",
+                    "insight",
+                    "intimidation",
+                    "perception",
+                    "survival"
+                ]
+            },
+            "equipment": {
+                "choices": [
+                    [
+                        {
+                            "chain mail armor": 1
+                        },
+                        {
+                            "leather armor": 1,
+                            "longbow": 1,
+                            "arrows": 20
+                        }
+                    ],
+                    [
+                        {
+                            "any martial weapon": 1,
+                            "shield": 1
+                        },
+                        {
+                            "any martial weapon": 2
+                        }
+                    ],
+                    [
+                        {
+                            "crossbow - light": 1,
+                            "bolts": 20
+                        },
+                        {
+                            "handaxe": 2
+                        }
+                    ],
+                    [
+                        {
+                            "dungeoneer's pack": 1
+                        },
+                        {
+                            "explorer's pack": 1
+                        }
+                    ]
+                ],
+                "standard": []
+            },
+            "spells": false,
+            "features": {
+                "fighting style": "run fight style selector",
+                "second wind": "Second Wind. You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again."
+            },
+            "subclass": false
+        },
+        "monk": {
+            "hit_die": 8,
+            "hp_base_lv_1": {
+                "init": 8,
+                "modifier": "con"
+            },
+            "proficiency bonus": 2,
+            "armor_proficiency": [],
+            "weapon_proficiency": [
+                "simple weapons",
+                "shortsword"
+            ],
+            "tool_proficiency": [
+                "artisan's tools"
+            ],
+            "saving_throw": [
+                "str",
+                "dex"
+            ],
+            "skills": {
+                "num": 2,
+                "selection": [
+                    "acrobatics",
+                    "athletics",
+                    "history",
+                    "insight",
+                    "religion",
+                    "stealth"
+                ]
+            },
+            "equipment": {
+                "choices": [
+                    [
+                        {
+                            "shortsword": 1
+                        },
+                        {
+                            "any simple weapon": 1
+                        }
+                    ],
+                    [
+                        {
+                            "dungeoneer's pack": 1
+                        },
+                        {
+                            "explorer's pack": 1
+                        }
+                    ]
+                ],
+                "standard": [
+                    {
+                        "darts": 10
+                    }
+                ]
+            },
+            "spells": false,
+            "features": {
+                "unarmored defense": "Unarmored Defense. Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier.",
+                "martial arts": "At 1st level, your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are shortswords and any simple melee weapons that don't have the two-handed or heavy property. You gain the following benefits while you are unarmed or wielding only monk weapons and you aren't wearing armor or wielding a shield: You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons. You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table. When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven't already taken a bonus action this turn. Certain monasteries use specialized forms of the monk weapons. For example, you might use a club that is two lengths of wood connected by a short chain (called a nunchaku) or a sickle with a shorter, straighter blade (called a kama). Whatever name you use for a monk weapon, you can use the game statistics provided for the weapon on the Weapons page."
+            },
+            "subclass": false
+        },
+        "paladin": {
+            "hit_die": 10,
+            "hp_base_lv_1": {
+                "init": 10,
+                "modifier": "con"
+            },
+            "proficiency bonus": 2,
+            "armor_proficiency": [
+                "all armor",
+                "shield"
+            ],
+            "weapon_proficiency": [
+                "simple weapons",
+                "martial weapons"
+            ],
+            "tool_proficiency": [],
+            "saving_throw": [
+                "wis",
+                "cha"
+            ],
+            "skills": {
+                "num": 2,
+                "selection": [
+                    "athletics",
+                    "insight",
+                    "intimidation",
+                    "medicine",
+                    "persuasion",
+                    "religion"
+                ]
+            },
+            "equipment": {
+                "choices": [
+                    [
+                        {
+                            "any martial weapon": 1,
+                            "shield": 1
+                        },
+                        {
+                            "any martial weapon": 2
+                        }
+                    ],
+                    [
+                        {
+                            "javelin": 5
+                        },
+                        {
+                            "any simple melee": 1
+                        }
+                    ],
+                    [
+                        {
+                            "priest's pack": 1
+                        },
+                        {
+                            "explorer's pack": 1
+                        }
+                    ]
+                ],
+                "standard": [
+                    {
+                        "chain mail armor": 1
+                    },
+                    {
+                        "holy symbol": 1
+                    }
+                ]
+            },
+            "spells": false,
+            "features": {
+                "divine sense": "Divine Sense. The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity (the vampire Count Strahd von Zarovich, for instance). Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the Hallow spell. You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.",
+                "lay on hands": "Lay on Hands. Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level x 5. As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool. Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one. This feature has no effect on undead and constructs."
+            },
+            "subclass": false
+        },
+        "ranger": {
+            "hit_die": 10,
+            "hp_base_lv_1": {
+                "init": 10,
+                "modifier": "con"
+            },
+            "proficiency bonus": 2,
+            "armor_proficiency": [
+                "light armor",
+                "medium armor",
+                "shield"
+            ],
+            "weapon_proficiency": [
+                "simple weapons",
+                "martial weapons"
+            ],
+            "tool_proficiency": [],
+            "saving_throw": [
+                "str",
+                "dex"
+            ],
+            "skills": {
+                "num": 2,
+                "selection": [
+                    "animal handling",
+                    "athletics",
+                    "investigation",
+                    "insight",
+                    "nature",
+                    "perception",
+                    "stealth",
+                    "survival"
+                ]
+            },
+            "equipment": {
+                "choices": [
+                    [
+                        {
+                            "scale mail armor": 1
+                        },
+                        {
+                            "leather armor": 1
+                        }
+                    ],
+                    [
+                        {
+                            "shortsword": 2
+                        },
+                        {
+                            "any simple melee": 2
+                        }
+                    ],
+                    [
+                        {
+                            "dungeoneer's pack": 1
+                        },
+                        {
+                            "adventurer's pack": 1
+                        }
+                    ]
+                ],
+                "standard": [
+                    {
+                        "longbow": 1,
+                        "arrows": 20
+                    }
+                ]
+            },
+            "spells": false,
+            "features": {
+                "favored enemy": "Favored Enemy. Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy. Choose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. Alternatively, you can select two races of humanoid (such as gnolls and orcs) as favored enemies. You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them. When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all.",
+                "natural explorer": "Also at 1st level, you are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or the Underdark. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you're proficient in. While traveling for an hour or more in your favored terrain, you gain the following benefits: Difficult terrain doesn't slow your group's travel. Your group can't become lost except by magical means. Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger. If you are traveling alone, you can move stealthily at a normal pace. When you forage, you find twice as much food as you normally would. While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area."
+            },
+            "subclass": false
+        },
+        "rogue": {
+            "hit_die": 8,
+            "hp_base_lv_1": {
+                "init": 8,
+                "modifier": "con"
+            },
+            "proficiency bonus": 2,
+            "armor_proficiency": [
+                "light armor"
+            ],
+            "weapon_proficiency": [
+                "simple weapons",
+                "crossbow - hand",
+                "longsword",
+                "rapier",
+                "shortsword"
+            ],
+            "tool_proficiency": [
+                "theives' tools"
+            ],
+            "saving_throw": [
+                "dex",
+                "int"
+            ],
+            "skills": {
+                "num": 4,
+                "selection": [
+                    "acrobatics",
+                    "athletics",
+                    "deception",
+                    "insight",
+                    "intimidation",
+                    "investigation",
+                    "performance",
+                    "persuasion",
+                    "perception"
+                ]
+            },
+            "equipment": {
+                "choices": [
+                    [
+                        {
+                            "rapier": 1
+                        },
+                        {
+                            "shortsword": 1
+                        }
+                    ],
+                    [
+                        {
+                            "shortbow": 1,
+                            "arrows": 20
+                        },
+                        {
+                            "shortsword": 1
+                        }
+                    ],
+                    [
+                        {"burglar's pack":1},
+                        {"dungeoneer's pack":1},
+                        {"explorer's pack":1}
+                    ]
+                ],
+                "standard": [
+                    {"leather armor": 1},
+                    {"thieves' tools": 1},
+                    {"dagger": 2}
+                ]
+            },
+            "spells": false,
+            "features": {
+                "expertise": "Expertise. At 1st level, choose two of your skill proficiencies, or one of your skill proficiencies and your proficiency with thieves' tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.",
+                "sneak attack": "Sneak Attack. Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon. You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll. The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table.",
+                "thieves cant": "During your rogue training you learned thieves' cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves' cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly. In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves' guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run."
+            },
+            "subclass": false
+        },
+        "sorceror": {
+            "hit_die": 6,
+            "hp_base_lv_1": {
+                "init": 6,
+                "modifier": "con"
+            },
+            "proficiency bonus": 2,
+            "armor_proficiency": [],
+            "weapon_proficiency": ["dagger","dart","quarterstaff", "sling", "crossbow - light"],
+            "tool_proficiency": [],
+            "saving_throw": [
+                "con",
+                "cha"
+            ],
+            "skills": {
+                "num": 2,
+                "selection": [
+                    "arcana",
+                    "deception",
+                    "insight",
+                    "intimidation",
+                    "religion",
+                    "persuasion"
+                ]
+            },
+            "equipment": {
+                "choices": [
+                    [
+                        {
+                            "crossbow - light":1,
+                            "bolts":20
+                        },
+                        {
+                            "any simple weapon": 1
+                        }
+                    ],
+                    [
+                        {
+                            "component pouch":1
+                        },
+                        {
+                            "arcane focus": 1
+                        }
+                    ],
+                    [
+                        {
+                            "dungeoneer's pack":1
+                        },
+                        {
+                            "explorer's pack": 1
+                        }
+                    ]
+                ],
+                "standard": [
+                    {"dagger":2}
+                ]
+            },
+            "spells": {
+                "cantrips known":4,
+                "spells known":2,
+                "spell slots":2,
+                "ability_modifier":"cha",
+                "focus":"arcane focus"
+            },
+            "features": {
+                "spellcasting":"Spellcasting. An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with arcane magic. This font of magic, whatever its origin, fuels your spells."
+            },
+            "subclass": {
+                "wild magic":{
+                    "text": "Wild Magic. Your innate magic comes from the wild forces of chaos that underlie the order of creation. You might have endured exposure to some form of raw magic, perhaps through a planar portal leading to Limbo, the Elemental Planes, or the mysterious Far Realm. Perhaps you were blessed by a powerful fey creature or marked by a demon. Or your magic could be a fluke of your birth, with no apparent cause or reason. However it came to be, this chaotic magic churns within you, waiting for any outlet.",
+                    "features":{
+                        "wild magic surge": "Wild Magic Surge. Starting when you choose this origin at 1st level, your spellcasting can unleash surges of untamed magic. Once per turn, the DM can have you roll a d20 immediately after you cast a sorcerer spell of 1st level or higher. If you roll a 1, roll on the Wild Magic Surge table to create a magical effect. If that effect is a spell, it is too wild to be affected by your Metamagic, and if it normally requires concentration, it doesn't require concentration in this case; the spell lasts for its full duration.",
+                        "tides of chaos": "Tides of Chaos. Starting at 1st level, you can manipulate the forces of chance and chaos to gain advantage on one attack roll, ability check, or saving throw. Once you do so, you must finish a long rest before you can use this feature again. Any time before you regain the use of this feature, the DM can have you roll on the Wild Magic Surge table immediately after you cast a sorcerer spell of 1st level or higher. You then regain the use of this feature."
+                    },
+                    "spells":false,
+                    "weapon_proficiency":false,
+                    "armor_proficiency":false
+                },
+                "draconic bloodline": {
+                    "text": "Draconic Bloodline: Your innate magic comes from draconic magic that was mingled with your blood or that of your ancestors. Most often, sorcerers with this origin trace their descent back to a mighty sorcerer of ancient times who made a bargain with a dragon or who might even have claimed a dragon parent. Some of these bloodlines are well established in the world, but most are obscure. Any given sorcerer could be the first of a new bloodline, as a result of a pact or some other exceptional circumstance.",
+                    "features":{
+                        "dragon ancestor": "Dragon Ancestor: The damage type associated with each dragon is used by features you gain later. You can speak, read, and write Draconic. Additionally, whenever you make a Charisma check when interacting with dragons, your proficiency bonus is doubled if it applies to the check.",
+                        "dragon selector": "run dragon selector",
+                        "draconic resilience": "Draconic Resilience. As magic flows through your body, it causes physical traits of your dragon ancestors to emerge. At 1st level, your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class. Additionally, parts of your skin are covered by a thin sheen of dragon-like scales. When you aren't wearing armor, your AC equals 13 + your Dexterity modifier. (Add Manually)"
+                    },
+                    "spells": false,
+                    "weapon_proficiency": false,
+                    "armor_proficiency": false
+                }
+            }
+        },
+        "warlock": {
+            "hit_die": 8,
+            "hp_base_lv_1": {
+                "init": 8,
+                "modifier": "con"
+            },
+            "proficiency bonus": 2,
+            "armor_proficiency": [
+                "light armor"
+            ],
+            "weapon_proficiency": [
+                "simple weapons"
+            ],
+            "tool_proficiency": [],
+            "saving_throw": [
+                "wis",
+                "cha"
+            ],
+            "skills": {
+                "num": 2,
+                "selection": [
+                    "arcana",
+                    "deception",
+                    "history",
+                    "intimidation",
+                    "religion",
+                    "nature",
+                    "investigation"
+                ]
+            },
+            "equipment": {
+                "choices": [
+                    [
+                        {
+                            "crossbow - light": 1,
+                            "bolts": 20
+                        },
+                        {
+                            "any simple weapon": 1
+                        }
+                    ],
+                    [
+                        {
+                            "component pouch": 1
+                        },
+                        {
+                            "arcane focus": 1
+                        }
+                    ],
+                    [
+                        {
+                            "scholar's pack":1
+                        },
+                        {
+                            "dungeoneer's pack": 1
+                        }
+                    ]
+                ],
+                "standard": [
+                    {"leather armor": 1},
+                    {"any simple weapon": 1},
+                    {"dagger": 2}
+                ]
+            },
+            "spells": {
+                "cantrips known": 2,
+                "spells known":2,
+                "spell slots":1,
+                "ability_modifier": "cha",
+                "focus": "arcane focus"
+            },
+            "features": {
+                "otherworldly patron":"Otherworldly Patron. At 1st level, you have struck a bargain with an otherworldly being of your choice. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level.",
+                "pact magic": "Pact Magic. Your arcane research and the magic bestowed on you by your patron have given you facility with spells. "
+            },
+            "subclass": {
+                "arch fae": {
+                    "text": "Arch Fae: Your patron is a lord or lady of the fey, a creature of legend who holds secrets that were forgotten before the mortal races were born. This being's motivations are often inscrutable, and sometimes whimsical, and might involve a striving for greater magical power or the settling of age-old grudges. Beings of this sort include the Prince of Frost; the Queen of Air and Darkness, ruler of the Gloaming Court; Titania of the Summer Court; her consort Oberon, the Green Lord; Hyrsam, the Prince of Fools; and ancient hags.",
+                    "spells":["faerie fire", "sleep"],
+                    "features":{
+                        "fey presence": "Fey Presence. Starting at 1st level, your patron bestows upon you the ability to project the beguiling and fearsome presence of the fey. As an action, you can cause each creature in a 10-foot cube originating from you to make a Wisdom saving throw against your warlock spell save DC. The creatures that fail their saving throws are all charmed or frightened by you (your choice) until the end of your next turn. Once you use this feature, you can't use it again until you finish a short or long rest."
+                    },
+                    "armor_proficiency": false,
+                    "weapon_proficiency": false
+                },
+                "fiend":{
+                    "text": "Fiend. You have made a pact with a fiend from the lower planes of existence, a being whose aims are evil, even if you strive against those aims. Such beings desire the corruption or destruction of all things, ultimately including you. Fiends powerful enough to forge a pact include demon lords such as Demogorgon, Orcus, Fraz'Urb-luu, and Baphomet; archdevils such as Asmodeus, Dispater, Mephistopheles, and Belial; pit fiends and balors that are especially mighty; and ultroloths and other lords of the yugoloths.",
+                    "spells": ["burning hands","command"],
+                    "features": {
+                        "dark ones blessing": "Dark One's Blessing. Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1)."
+                    },
+                    "armor_proficiency": false,
+                    "weapon_proficiency": false
+                },
+                "great old one":{
+                    "text": "The Great Old One. Your patron is a mysterious entity whose nature is utterly foreign to the fabric of reality. It might come from the Far Realm, the space beyond reality, or it could be one of the elder gods known only in legends. Its motives are incomprehensible to mortals, and its knowledge so immense and ancient that even the greatest libraries pale in comparison to the vast secrets it holds. The Great Old One might be unaware of your existence or entirely indifferent to you, but the secrets you have learned allow you to draw your magic from it. Entities of this type include Ghaunadar, called That Which Lurks; Tharizdun, the Chained God; Dendar, the Night Serpent; Zargon, the Returner; Great Cthulhu; and other unfathomable beings.",
+                    "spells": ["dissonant whispers", "tasha's hideous laughter"],
+                    "features":{
+                        "awakened mind": "Awakened Mind. Starting at 1st level, your alien knowledge gives you the ability to touch the minds of other creatures. You can telepathically speak to any creature you can see within 30 feet of you. You don't need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language."
+                    },
+                    "armor_proficiency": false,
+                    "weapon_proficiency": false
+                }
+            }
+        },
+        "wizard": {
+            "hit_die": 6,
+            "hp_base_lv_1": {
+                "init": 6,
+                "modifier": "con"
+            },
+            "proficiency bonus": 2,
+            "armor_proficiency": [],
+            "weapon_proficiency": [
+                "dagger",
+                "dart",
+                "sling",
+                "quarterstaff",
+                "crossbow - light"
+            ],
+            "tool_proficiency": [],
+            "saving_throw": [
+                "int",
+                "wis"
+            ],
+            "skills": {
+                "num": 2,
+                "selection": [
+                    "acrobatics",
+                    "history",
+                    "insight",
+                    "investigation",
+                    "medicine",
+                    "religion"
+                ]
+            },
+            "equipment": {
+                "choices": [
+                    [
+                        {
+                            "quarterstaff": 1
+                        },
+                        {
+                            "dagger":1
+                        }
+                    ],
+                    [
+                        {
+                            "component pouch": 1
+                        },
+                        {
+                            "arcane focus": 1
+                        }
+                    
+                    ],
+                    [
+                        {
+                            "scholar's pack": 1
+                        },
+                        {
+                            "explorer's pouch": 1
+                        }
+                    ]
+                ],
+                "standard": [
+                    {
+                        "spellbook": 1
+                    }
+                ]
+            },
+            "spells": {
+                "cantrips known":3,
+                "spell slots": 2,
+                "ability_modifier": "int",
+                "focus": "arcane focus",
+                "spells known": 0
+            },
+            "features": {
+                "spellbook": "Spellbook: At 1st level, you have a spellbook containing six 1st-level wizard spells of your choice. Your spellbook is the repository of the wizard spells you know, except your cantrips, which are fixed in your mind. The spells that you add to your spellbook as you gain levels reflect the arcane research you conduct on your own, as well as intellectual breakthroughs you have had about the nature of the multiverse. You might find other spells during your adventures. You could discover a spell recorded on a scroll in an evil wizard's chest, for example, or in a dusty tome in an ancient library.",
+                "copying a spell":"Copying a Spell into the Book. When you find a wizard spell of 1st level or higher, you can add it to your spellbook if it is of a spell level you can prepare and if you can spare the time to decipher and copy it. Copying a spell into your spellbook involves reproducing the basic form of the spell, then deciphering the unique system of notation used by the wizard who wrote it. You must practice the spell until you understand the sounds or gestures required, then transcribe it into your spellbook using your own notation.For each level of the spell, the process takes 2 hours and costs 50 gp. The cost represents material components you expend as you experiment with the spell to master it, as well as the fine inks you need to record it. Once you have spent this time and money, you can prepare the spell just like your other spells.",
+                "replacing the book":"Replacing the Book. You can copy a spell from your own spellbook into another book-for example, if you want to make a backup copy of your spellbook. This is just like copying a new spell into your spellbook, but faster and easier, since you understand your own notation and already know how to cast the spell. You need spend only 1 hour and 10 gp for each level of the copied spell.If you lose your spellbook, you can use the same procedure to transcribe the spells that you have prepared into a new spellbook. Filling out the remainder of your spellbook requires you to find new spells to do so, as normal. For this reason, many wizards keep backup spellbooks in a safe place.",
+                "book appearance":"The Book's Appearance. Your spellbook is a unique compilation of spells, with its own decorative flourishes and margin notes. It might be a plain, functional leather volume that you received as a gift from your master, a finely bound gilt-edged tome you found in an ancient library or even a loose collection of notes scrounged together after you lost your previous spellbook in a mishap."
+            },
+            "subclass": false
+        }
+    }
+}
