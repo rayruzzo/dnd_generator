@@ -2,10 +2,11 @@
 
 import random
 import json
-
+from collections import Counter
 
 class Character:
     def __init__(self):
+        self.level = 1
         # Roll initial abilities
         self.abilities = {
             "str": rollStat(),
@@ -16,53 +17,46 @@ class Character:
             "cha": rollStat(),
         }
 
+        #Get Modifiers from Abilities
+        self.abilityModifiers = getAbilityModifiers(self.abilities)
+
+        #select character race
         self.race = selectRace()
+        self.raceData = getRaceData(self.race)
+        self.adjustAbility(self.raceData["score_mod"])
+       
+        #set race based stats
+        self.age, self.age_group = self.getAge(self.raceData)
+        self.height, self.weight = self.getSize(self.raceData)
 
-        race_data = getRaceData(self.race)
+        self.speed = self.raceData["speed"]
+        self.weapon_proficiency = self.raceData["weapon_proficiency"]
+        self.tool_proficiency = self.raceData["tool_proficiency"]
+        self.armor_proficiency = self.raceData["armor_proficiency"]
+        self.languages = self.raceData["languages"]
+        self.traits = self.raceData["traits"]
+        self.alignment = self.getAlignment(self.raceData["alignment_affinity"])
 
-        self.abilityModifier(race_data)
-
-        self.age, self.age_group = self.getAge(race_data)
-        self.height, self.weight = self.getSize(race_data)
-
-        self.speed = race_data["speed"]
-        self.weapon_proficiency = race_data["weapon_proficiency"]
-        self.tool_proficiency = race_data["tool_proficiency"]
-        self.armor_proficiency = race_data["armor_proficiency"]
-        self.languages = race_data["languages"]
-        self.traits = race_data["traits"]
-        self.alignment = self.getAlignment(race_data["alignment_affinity"])
-
-        if race_data["subrace"]:
-            self.subrace = random.choice(list(race_data["subrace"].keys()))
+        #check for and initiate potential subraces
+        if self.raceData["subrace"]:
+            self.subrace = random.choice(list(self.raceData["subrace"].keys()))
             try:
-                self.abilityModifier(race_data["subrace"][self.subrace])
+                self.adjustAbility(self.raceData["subrace"][self.subrace])
             except:
                 pass
 
             try:
-                for trait in race_data["subrace"][self.subrace]["traits"]:
+                for trait in self.raceData["subrace"][self.subrace]["traits"]:
                     self.traits.append(trait)
             except:
                 pass
+        #initiate class based data
+        highestStat = max(self.abilities, key = self.abilities.get)
+        self.className, self.classData = selectClass(highestStat)
+        self.inventory = []
+        self.spells = {}
 
-        print(self.race)
-        try:
-            print(self.subrace)
-        except:
-            pass
-        print(self.abilities)
-        print(
-            f"Age: {self.age}. This is an {self.age_group} {self.race}. They normally reach adulthood at {race_data['age']['adult']} and live to be about {race_data['age']['max']}"
-        )
-        print(f"Height: {self.height} inches. Weight: {self.weight} lbs.")
-        print(f"Alignment: {self.alignment}")
-        print(f"Speed: {self.speed}")
-        print(f"Languages: {self.languages}")
-        print(f"Weapon Proficiency: {self.weapon_proficiency}")
-        print(f"Armor Proficiency: {self.armor_proficiency}")
-        print(f"Tool Proficiency: {self.tool_proficiency}")
-        print(self.traits)
+        self.parseClassData()
 
     def abilityModifier(self, data_dict: dict):
         for mod, val in data_dict["score_mod"].items():
@@ -143,6 +137,122 @@ class Character:
 
         return random.choice(alignments)
 
+    def parseClassData(self):
+        """
+        Transforms json data from classes and turns them into properties for 
+        """
+        self.hitDie = self.classData['hit_die']
+        self.hitPoints = self.classData["hp_base_lv_1"]["init"] + self.abilities[self.classData["hp_base_lv_1"]["modifier"]]
+        self.proficiencyBonus = self.classData['proficiency_bonus']
+
+        try:
+            for x in self.classData['armor_proficiency']:
+                self.armor_proficiency.append(x)
+        except:
+            pass
+
+        try:
+            for x in self.classData['weapon_proficiency']:
+                self.weapon_proficiency.append(x)
+        except:
+            pass
+
+        try:
+            for x in self.classData['tool_proficiency']:
+                self.tool_proficiency.append(x)
+        except:
+            pass
+
+        self.savingThrows = self.classData['saving_throw']
+        
+        self.skillProficiencies = selectSkillProficiency(self.classData['skills']['num'],self.classData['skills']['selection'])
+        self.startingInventory()
+
+        try:
+            self.spells = self.classData["spells"]
+        except:
+            pass
+
+        self.features = self.classData['features']
+    
+    def startingInventory(self):
+        itemSelections = self.classData["equipment"]["choices"]
+
+        for selection in itemSelections:
+            self.inventory.append(random.choice(selection))
+
+        for item in self.classData["equipment"]["standard"]:
+            self.inventory.append(item)
+        return
+
+    def selectAndParseSubclass(self):
+        subclasses = self.classData["subclass"]
+        self.subclassName = random.choice(subclasses.keys())
+
+        if (self.race == "dragonborn") & (self.subclassName == "draconic bloodline"):
+            self.subclassName = random.choice(subclasses.keys())
+
+        self.subclassData = self.classData["subclass"][self.subclassName]
+        try:
+            self.spells.update({"available_spells":{"level 1": self.subclassData["spells"]}})
+        except:
+            pass
+
+        try:
+            for x in self.subclassData['weapon_proficiency']:
+                self.weapon_proficiency.append(x)
+        except:
+            pass
+
+        try:
+            for x in self.subclassData['armor_proficiency']:
+                self.armor_proficiency.append(x)
+        except:
+            pass
+
+        try:
+            for x in self.subclassData['features']:
+                self.features.append(x)
+        except:
+            pass
+
+    def adjustAbility(self, dictionary):
+        for abl, mod in dictionary.items():
+            self.abilityModifiers[abl] += mod
+
+    def printCharacterSheet(self):
+        try:
+            print(f"Level {self.level} {self.race} ({self.subrace}) {self.className} ({self.subclassName})")
+        except:
+            try: 
+                print(f"Level {self.level} {self.race} ({self.subrace}) {self.className}")
+            except:
+                try:
+                    print(f"Level {self.level} {self.race} {self.className} ({self.subclassName})")
+                except:
+                    print(f"Level {self.level} {self.race} {self.className}")
+        print(self.abilities)
+        print(self.abilityModifiers)
+        print(self.skillProficiencies)
+        print(f"Hit Die: {self.hitDie}")
+        print(f"Hit Points: {self.hitPoints}")
+        print(
+            f"Age: {self.age}. This is an {self.age_group} {self.race}. They normally reach adulthood at {self.raceData['age']['adult']} and live to be about {self.raceData['age']['max']}"
+        )
+        print(f"Height: {self.height} inches. Weight: {self.weight} lbs.")
+        print(f"Alignment: {self.alignment}")
+        print(f"Speed: {self.speed}")
+        print(f"Languages: {self.languages}")
+        print(f"Weapon Proficiency: {self.weapon_proficiency}")
+        print(f"Armor Proficiency: {self.armor_proficiency}")
+        print(f"Tool Proficiency: {self.tool_proficiency}")
+        try:
+            print(self.spells)
+        except:
+            pass
+        print(self.traits)
+        return
+
 
 def rollDice(numDice: int, sides: int):
     """
@@ -164,8 +274,24 @@ def rollStat():
 def selectRace():
     f = open("dnd_races.json")
     data = json.load(f)
-    return random.choice(list(data["dnd_races"].keys()))
+    race = random.choice(list(data["dnd_races"].keys()))
     f.close()
+    return race
+
+def selectClass(stat_weight = False):
+    f = open("classes.json")
+    data = json.load(f)
+    classData = data["first level dnd classes"]
+    classChoices = list(classData.keys())
+    if stat_weight:
+        for cla in classData.keys():
+            if stat_weight in classData[cla]['saving_throw']:
+                classChoices.append(cla)
+                classChoices.append(cla)
+                classChoices.append(cla)
+    charClass = random.choice(classChoices)
+    f.close()
+    return charClass, classData[charClass]
 
 
 def getRaceData(race):
@@ -174,8 +300,8 @@ def getRaceData(race):
     """
     f = open("dnd_races.json")
     data = json.load(f)
-    return data["dnd_races"][race]
     f.close()
+    return data["dnd_races"][race]
 
 def fightStyleSelector():
     fightingStyles = [
@@ -199,5 +325,48 @@ def dragonAncestorSelector():
 
     return random.choice(dragons)
 
+def selectSkillProficiency(numSkills: int, skillList: list):
+    return random.sample(skillList, numSkills)
+
+def getAbilityModifiers(abilityDict):
+    modifierDict = {}
+    for ability, score in abilityDict.items():
+        match score:
+            case 1:
+                modifierDict[ability] = -5
+            case 2 | 3:
+                modifierDict[ability] = -4 
+            case 4 | 5:
+                modifierDict[ability] = -3
+            case 6 | 7:
+                modifierDict[ability] = -2
+            case 8 | 9:
+                modifierDict[ability] = -1
+            case 10 | 11:
+                modifierDict[ability] = 0
+            case 12 | 13:
+                modifierDict[ability] = 1
+            case 14 | 15:
+                modifierDict[ability] = 2
+            case 16 | 17:
+                modifierDict[ability] = 3
+            case 18 | 19:
+                modifierDict[ability] = 4
+            case 20 | 21: 
+                modifierDict[ability] = 5
+            case 22 | 23:
+                modifierDict[ability] = 6
+            case 24 | 25: 
+                modifierDict[ability] = 7
+            case 26 | 27:
+                modifierDict[ability] = 8
+            case 28 | 29:
+                modifierDict[ability] = 9
+            case _:
+                modifierDict[ability] = 10
+    return modifierDict
+
+
 
 char = Character()
+char.printCharacterSheet()
