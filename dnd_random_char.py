@@ -37,6 +37,7 @@ class Character:
         self.traits = self.raceData["traits"]
         self.alignment = self.getAlignment(self.raceData["alignment_affinity"])
 
+
         #check for and initiate potential subraces
         if self.raceData["subrace"]:
             self.subrace = random.choice(list(self.raceData["subrace"].keys()))
@@ -57,6 +58,8 @@ class Character:
         self.spells = {}
 
         self.parseClassData()
+        self.parseTraits()
+        self.armorClass = 10+self.abilityModifiers['dex']
 
     def abilityModifier(self, data_dict: dict):
         for mod, val in data_dict["score_mod"].items():
@@ -165,7 +168,10 @@ class Character:
 
         self.savingThrows = self.classData['saving_throw']
         
+        #parse skill proficiencies
         self.skillProficiencies = selectSkillProficiency(self.classData['skills']['num'],self.classData['skills']['selection'])
+
+        #initiate inventory
         self.startingInventory()
 
         try:
@@ -220,37 +226,129 @@ class Character:
         for abl, mod in dictionary.items():
             self.abilityModifiers[abl] += mod
 
+    def parseTraits(self):
+        parsedTraits = []
+        if "skill versatility" in self.traits:
+            f = open("skills.json")
+            data = json.load(f)
+            skillList = list(data['skills'].keys())
+
+            for skill in self.skillProficiencies:
+                skillList.remove(skill)
+
+            for i in range(2):
+                randomSkill = selectSkillProficiency(1,skillList)
+                self.skillProficiencies.append(randomSkill)
+            self.traits.remove("skill versatility")
+
+            f.close()
+        
+        if "menacing" in self.traits:
+            self.skillProficiencies.append('intimidation')
+
+        if "keen senses" in self.traits:
+            self.skillProficiencies.append('perception')
+        
+        with open("traits.json") as f:
+            data = json.load(f)
+            for trait in self.traits:
+                try:
+                    parsedTraits.append(data['traits'][trait]['traits'])
+                except:
+                    pass
+                
+                try:
+                    for weapon in data['traits'][trait]['weapon_proficiency']:
+                        self.weapon_proficiency.append(weapon)
+                except:
+                    pass
+
+                try:
+                    for armor in data['traits'][trait]['armor_proficiency']:
+                        self.weapon_proficiency.append(armor)
+                except:
+                    pass
+
+                try:
+                    self.speed += data['traits'][trait]['speed']
+                except:
+                    pass
+
+            self.traits = parsedTraits
+
+            f.close()
+
+
+
     def printCharacterSheet(self):
+        #print character level, race, and class
         try:
-            print(f"Level {self.level} {self.race} ({self.subrace}) {self.className} ({self.subclassName})")
+            print(f"Level {self.level} {self.subrace.capitalize()} {self.race.capitalize()} {self.className.capitalize()} ({self.subclassName.capitalize()})\n")
         except:
             try: 
-                print(f"Level {self.level} {self.race} ({self.subrace}) {self.className}")
+                print(f"Level {self.level} {self.subrace.capitalize()} {self.race.capitalize()} {self.className.capitalize()}\n")
             except:
                 try:
-                    print(f"Level {self.level} {self.race} {self.className} ({self.subclassName})")
+                    print(f"Level {self.level} {self.race.capitalize()} {self.className.capitalize()} ({self.subclassName.capitalize()})\n")
                 except:
-                    print(f"Level {self.level} {self.race} {self.className}")
-        print(self.abilities)
-        print(self.abilityModifiers)
-        print(self.skillProficiencies)
-        print(f"Hit Die: {self.hitDie}")
+                    print(f"Level {self.level} {self.race.capitalize()} {self.className.capitalize()}\n")
+
+        #print abilities
+        print("Abilities")
+        for ability in self.abilities.keys():
+            print(f"{ability.upper()}: {self.abilities[ability]} (Mod: {self.abilityModifiers[ability]})")
+
+
+        print(f"\nHit Die: {self.hitDie}")
         print(f"Hit Points: {self.hitPoints}")
+        print(f"Armor Class: {self.armorClass}")
         print(
             f"Age: {self.age}. This is an {self.age_group} {self.race}. They normally reach adulthood at {self.raceData['age']['adult']} and live to be about {self.raceData['age']['max']}"
         )
         print(f"Height: {self.height} inches. Weight: {self.weight} lbs.")
+        print(f"Languages: {self.languages}")
         print(f"Alignment: {self.alignment}")
         print(f"Speed: {self.speed}")
-        print(f"Languages: {self.languages}")
-        print(f"Weapon Proficiency: {self.weapon_proficiency}")
-        print(f"Armor Proficiency: {self.armor_proficiency}")
-        print(f"Tool Proficiency: {self.tool_proficiency}")
-        try:
+
+        #print skills
+        print("\nSkills:")
+        with open('skills.json') as f:
+            data = json.load(f)
+            for skill, abl in data['skills'].items():
+                skillString = f"{skill.capitalize()} ({abl.upper()})"
+                if skill in self.skillProficiencies:
+                    skillString += " (Proficient)"
+                print(skillString)
+        f.close()
+        print(f"Proficiency Bonus: {self.proficiencyBonus}")
+
+        #print weapon, armor, and tool proficiencies
+        if len(self.weapon_proficiency) > 0:
+            print(f"\nWeapon Proficiency:")
+            for weapon in self.weapon_proficiency:
+                print(f"-{weapon.capitalize()}")
+
+        if len(self.armor_proficiency) > 0:
+            print(f"\nArmor Proficiency:")
+            for armor in self.armor_proficiency:
+                print(f"-{armor.capitalize()}")
+        if len(self.tool_proficiency) > 0:
+            print(f"\nTool Proficiency")
+            for tool in self.tool_proficiency:
+                print(f"-{tool.capitalize()}")
+
+        if self.spells:
+            print("\nSpells")
             print(self.spells)
-        except:
-            pass
-        print(self.traits)
+
+        print("\nTraits")
+        for trait in self.traits:
+            print(trait)
+
+        print("\nInventory: ")
+        for item in self.inventory:
+            for name, amount in item.items():
+                print(f"-{name.capitalize()}: {amount}")
         return
 
 

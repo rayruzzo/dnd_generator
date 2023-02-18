@@ -52,7 +52,7 @@
                 "lawful neutral"
             ],
             "subrace": {
-                "hill dwarf": {
+                "hill": {
                     "score_mod": {
                         "wis": 1
                     },
@@ -60,7 +60,7 @@
                         "dwarven toughness"
                     ]
                 },
-                "mountain dwarf": {
+                "mountain": {
                     "score_mod": {
                         "str": 2
                     },
@@ -114,7 +114,7 @@
                 "chaotic neutral"
             ],
             "subrace": {
-                "high elf": {
+                "high": {
                     "score_mod": {
                         "int": 1
                     },
@@ -123,7 +123,7 @@
                         "extra language"
                     ]
                 },
-                "wood elf": {
+                "wood": {
                     "score_mod": {
                         "wis": 1
                     },
@@ -449,8 +449,7 @@
                 "darkvision",
                 "fey ancestry",
                 "extra language",
-                "skill versatility",
-                "two random abilities"
+                "skill versatility"
             ],
             "alignment_affinity": [
                 "chaotic good",
@@ -495,8 +494,7 @@
                 "darkvision",
                 "menacing",
                 "relentless endurance",
-                "savage attacks",
-                "two random abilities"
+                "savage attacks"
             ],
             "alignment_affinity": [
                 "chaotic evil",

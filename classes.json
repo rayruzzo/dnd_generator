@@ -518,7 +518,6 @@
                 "fighting style": "run fight style selector",
                 "second wind": "Second Wind. You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again."
             }
-            
         },
         "monk": {
             "hit_die": 8,
@@ -580,7 +579,6 @@
                 "unarmored defense": "Unarmored Defense. Beginning at 1st level, while you are wearing no armor and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier.",
                 "martial arts": "At 1st level, your practice of martial arts gives you mastery of combat styles that use unarmed strikes and monk weapons, which are shortswords and any simple melee weapons that don't have the two-handed or heavy property. You gain the following benefits while you are unarmed or wielding only monk weapons and you aren't wearing armor or wielding a shield: You can use Dexterity instead of Strength for the attack and damage rolls of your unarmed strikes and monk weapons. You can roll a d4 in place of the normal damage of your unarmed strike or monk weapon. This die changes as you gain monk levels, as shown in the Martial Arts column of the Monk table. When you use the Attack action with an unarmed strike or a monk weapon on your turn, you can make one unarmed strike as a bonus action. For example, if you take the Attack action and attack with a quarterstaff, you can also make an unarmed strike as a bonus action, assuming you haven't already taken a bonus action this turn. Certain monasteries use specialized forms of the monk weapons. For example, you might use a club that is two lengths of wood connected by a short chain (called a nunchaku) or a sickle with a shorter, straighter blade (called a kama). Whatever name you use for a monk weapon, you can use the game statistics provided for the weapon on the Weapons page."
             }
-            
         },
         "paladin": {
             "hit_die": 10,
@@ -655,7 +653,6 @@
                 "divine sense": "Divine Sense. The presence of strong evil registers on your senses like a noxious odor, and powerful good rings like heavenly music in your ears. As an action, you can open your awareness to detect such forces. Until the end of your next turn, you know the location of any celestial, fiend, or undead within 60 feet of you that is not behind total cover. You know the type (celestial, fiend, or undead) of any being whose presence you sense, but not its identity (the vampire Count Strahd von Zarovich, for instance). Within the same radius, you also detect the presence of any place or object that has been consecrated or desecrated, as with the Hallow spell. You can use this feature a number of times equal to 1 + your Charisma modifier. When you finish a long rest, you regain all expended uses.",
                 "lay on hands": "Lay on Hands. Your blessed touch can heal wounds. You have a pool of healing power that replenishes when you take a long rest. With that pool, you can restore a total number of hit points equal to your paladin level x 5. As an action, you can touch a creature and draw power from the pool to restore a number of hit points to that creature, up to the maximum amount remaining in your pool. Alternatively, you can expend 5 hit points from your pool of healing to cure the target of one disease or neutralize one poison affecting it. You can cure multiple diseases and neutralize multiple poisons with a single use of Lay on Hands, expending hit points separately for each one. This feature has no effect on undead and constructs."
             }
-            
         },
         "ranger": {
             "hit_die": 10,
@@ -730,7 +727,6 @@
                 "favored enemy": "Favored Enemy. Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy. Choose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. Alternatively, you can select two races of humanoid (such as gnolls and orcs) as favored enemies. You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them. When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all.",
                 "natural explorer": "Also at 1st level, you are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or the Underdark. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you're proficient in. While traveling for an hour or more in your favored terrain, you gain the following benefits: Difficult terrain doesn't slow your group's travel. Your group can't become lost except by magical means. Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger. If you are traveling alone, you can move stealthily at a normal pace. When you forage, you find twice as much food as you normally would. While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area."
             }
-            
         },
         "rogue": {
             "hit_die": 8,
@@ -790,15 +786,27 @@
                         }
                     ],
                     [
-                        {"burglar's pack":1},
-                        {"dungeoneer's pack":1},
-                        {"explorer's pack":1}
+                        {
+                            "burglar's pack": 1
+                        },
+                        {
+                            "dungeoneer's pack": 1
+                        },
+                        {
+                            "explorer's pack": 1
+                        }
                     ]
                 ],
                 "standard": [
-                    {"leather armor": 1},
-                    {"thieves' tools": 1},
-                    {"dagger": 2}
+                    {
+                        "leather armor": 1
+                    },
+                    {
+                        "thieves' tools": 1
+                    },
+                    {
+                        "dagger": 2
+                    }
                 ]
             },
             "spells": false,
@@ -807,7 +815,6 @@
                 "sneak attack": "Sneak Attack. Beginning at 1st level, you know how to strike subtly and exploit a foe's distraction. Once per turn, you can deal an extra 1d6 damage to one creature you hit with an attack if you have advantage on the attack roll. The attack must use a finesse or a ranged weapon. You don't need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn't incapacitated, and you don't have disadvantage on the attack roll. The amount of the extra damage increases as you gain levels in this class, as shown in the Sneak Attack column of the Rogue table.",
                 "thieves cant": "During your rogue training you learned thieves' cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves' cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly. In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves' guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run."
             }
-            
         },
         "sorceror": {
             "hit_die": 6,
@@ -817,7 +824,13 @@
             },
             "proficiency_bonus": 2,
             "armor_proficiency": [],
-            "weapon_proficiency": ["dagger","dart","quarterstaff", "sling", "crossbow - light"],
+            "weapon_proficiency": [
+                "dagger",
+                "dart",
+                "quarterstaff",
+                "sling",
+                "crossbow - light"
+            ],
             "tool_proficiency": [],
             "saving_throw": [
                 "con",
@@ -838,8 +851,8 @@
                 "choices": [
                     [
                         {
-                            "crossbow - light":1,
-                            "bolts":20
+                            "crossbow - light": 1,
+                            "bolts": 20
                         },
                         {
                             "any simple weapon": 1
@@ -847,7 +860,7 @@
                     ],
                     [
                         {
-                            "component pouch":1
+                            "component pouch": 1
                         },
                         {
                             "arcane focus": 1
@@ -855,7 +868,7 @@
                     ],
                     [
                         {
-                            "dungeoneer's pack":1
+                            "dungeoneer's pack": 1
                         },
                         {
                             "explorer's pack": 1
@@ -863,30 +876,32 @@
                     ]
                 ],
                 "standard": [
-                    {"dagger":2}
+                    {
+                        "dagger": 2
+                    }
                 ]
             },
             "spells": {
-                "cantrips known":4,
-                "spells known":2,
-                "spell slots":2,
-                "ability_modifier":"cha",
-                "focus":"arcane focus"
+                "cantrips known": 4,
+                "spells known": 2,
+                "spell slots": 2,
+                "ability_modifier": "cha",
+                "focus": "arcane focus"
             },
             "features": {
-                "spellcasting":"Spellcasting. An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with arcane magic. This font of magic, whatever its origin, fuels your spells."
+                "spellcasting": "Spellcasting. An event in your past, or in the life of a parent or ancestor, left an indelible mark on you, infusing you with arcane magic. This font of magic, whatever its origin, fuels your spells."
             },
             "subclass": {
-                "wild magic":{
+                "wild magic": {
                     "text": "Wild Magic. Your innate magic comes from the wild forces of chaos that underlie the order of creation. You might have endured exposure to some form of raw magic, perhaps through a planar portal leading to Limbo, the Elemental Planes, or the mysterious Far Realm. Perhaps you were blessed by a powerful fey creature or marked by a demon. Or your magic could be a fluke of your birth, with no apparent cause or reason. However it came to be, this chaotic magic churns within you, waiting for any outlet.",
-                    "features":{
+                    "features": {
                         "wild magic surge": "Wild Magic Surge. Starting when you choose this origin at 1st level, your spellcasting can unleash surges of untamed magic. Once per turn, the DM can have you roll a d20 immediately after you cast a sorcerer spell of 1st level or higher. If you roll a 1, roll on the Wild Magic Surge table to create a magical effect. If that effect is a spell, it is too wild to be affected by your Metamagic, and if it normally requires concentration, it doesn't require concentration in this case; the spell lasts for its full duration.",
                         "tides of chaos": "Tides of Chaos. Starting at 1st level, you can manipulate the forces of chance and chaos to gain advantage on one attack roll, ability check, or saving throw. Once you do so, you must finish a long rest before you can use this feature again. Any time before you regain the use of this feature, the DM can have you roll on the Wild Magic Surge table immediately after you cast a sorcerer spell of 1st level or higher. You then regain the use of this feature."
                     }
                 },
                 "draconic bloodline": {
                     "text": "Draconic Bloodline: Your innate magic comes from draconic magic that was mingled with your blood or that of your ancestors. Most often, sorcerers with this origin trace their descent back to a mighty sorcerer of ancient times who made a bargain with a dragon or who might even have claimed a dragon parent. Some of these bloodlines are well established in the world, but most are obscure. Any given sorcerer could be the first of a new bloodline, as a result of a pact or some other exceptional circumstance.",
-                    "features":{
+                    "features": {
                         "dragon ancestor": "Dragon Ancestor: The damage type associated with each dragon is used by features you gain later. You can speak, read, and write Draconic. Additionally, whenever you make a Charisma check when interacting with dragons, your proficiency bonus is doubled if it applies to the check.",
                         "dragon selector": "run dragon selector",
                         "draconic resilience": "Draconic Resilience. As magic flows through your body, it causes physical traits of your dragon ancestors to emerge. At 1st level, your hit point maximum increases by 1 and increases by 1 again whenever you gain a level in this class. Additionally, parts of your skin are covered by a thin sheen of dragon-like scales. When you aren't wearing armor, your AC equals 13 + your Dexterity modifier. (Add Manually)"
@@ -945,7 +960,7 @@
                     ],
                     [
                         {
-                            "scholar's pack":1
+                            "scholar's pack": 1
                         },
                         {
                             "dungeoneer's pack": 1
@@ -953,43 +968,58 @@
                     ]
                 ],
                 "standard": [
-                    {"leather armor": 1},
-                    {"any simple weapon": 1},
-                    {"dagger": 2}
+                    {
+                        "leather armor": 1
+                    },
+                    {
+                        "any simple weapon": 1
+                    },
+                    {
+                        "dagger": 2
+                    }
                 ]
             },
             "spells": {
                 "cantrips known": 2,
-                "spells known":2,
-                "spell slots":1,
+                "spells known": 2,
+                "spell slots": 1,
                 "ability_modifier": "cha",
                 "focus": "arcane focus"
             },
             "features": {
-                "otherworldly patron":"Otherworldly Patron. At 1st level, you have struck a bargain with an otherworldly being of your choice. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level.",
+                "otherworldly patron": "Otherworldly Patron. At 1st level, you have struck a bargain with an otherworldly being of your choice. Your choice grants you features at 1st level and again at 6th, 10th, and 14th level.",
                 "pact magic": "Pact Magic. Your arcane research and the magic bestowed on you by your patron have given you facility with spells. "
             },
             "subclass": {
                 "arch fae": {
                     "text": "Arch Fae: Your patron is a lord or lady of the fey, a creature of legend who holds secrets that were forgotten before the mortal races were born. This being's motivations are often inscrutable, and sometimes whimsical, and might involve a striving for greater magical power or the settling of age-old grudges. Beings of this sort include the Prince of Frost; the Queen of Air and Darkness, ruler of the Gloaming Court; Titania of the Summer Court; her consort Oberon, the Green Lord; Hyrsam, the Prince of Fools; and ancient hags.",
-                    "spells":["faerie fire", "sleep"],
-                    "features":{
+                    "spells": [
+                        "faerie fire",
+                        "sleep"
+                    ],
+                    "features": {
                         "fey presence": "Fey Presence. Starting at 1st level, your patron bestows upon you the ability to project the beguiling and fearsome presence of the fey. As an action, you can cause each creature in a 10-foot cube originating from you to make a Wisdom saving throw against your warlock spell save DC. The creatures that fail their saving throws are all charmed or frightened by you (your choice) until the end of your next turn. Once you use this feature, you can't use it again until you finish a short or long rest."
                     }
                 },
-                "fiend":{
+                "fiend": {
                     "text": "Fiend. You have made a pact with a fiend from the lower planes of existence, a being whose aims are evil, even if you strive against those aims. Such beings desire the corruption or destruction of all things, ultimately including you. Fiends powerful enough to forge a pact include demon lords such as Demogorgon, Orcus, Fraz'Urb-luu, and Baphomet; archdevils such as Asmodeus, Dispater, Mephistopheles, and Belial; pit fiends and balors that are especially mighty; and ultroloths and other lords of the yugoloths.",
-                    "spells": ["burning hands","command"],
+                    "spells": [
+                        "burning hands",
+                        "command"
+                    ],
                     "features": {
                         "dark ones blessing": "Dark One's Blessing. Starting at 1st level, when you reduce a hostile creature to 0 hit points, you gain temporary hit points equal to your Charisma modifier + your warlock level (minimum of 1)."
                     },
                     "armor_proficiency": false,
                     "weapon_proficiency": false
                 },
-                "great old one":{
+                "great old one": {
                     "text": "The Great Old One. Your patron is a mysterious entity whose nature is utterly foreign to the fabric of reality. It might come from the Far Realm, the space beyond reality, or it could be one of the elder gods known only in legends. Its motives are incomprehensible to mortals, and its knowledge so immense and ancient that even the greatest libraries pale in comparison to the vast secrets it holds. The Great Old One might be unaware of your existence or entirely indifferent to you, but the secrets you have learned allow you to draw your magic from it. Entities of this type include Ghaunadar, called That Which Lurks; Tharizdun, the Chained God; Dendar, the Night Serpent; Zargon, the Returner; Great Cthulhu; and other unfathomable beings.",
-                    "spells": ["dissonant whispers", "tasha's hideous laughter"],
-                    "features":{
+                    "spells": [
+                        "dissonant whispers",
+                        "tasha's hideous laughter"
+                    ],
+                    "features": {
                         "awakened mind": "Awakened Mind. Starting at 1st level, your alien knowledge gives you the ability to touch the minds of other creatures. You can telepathically speak to any creature you can see within 30 feet of you. You don't need to share a language with the creature for it to understand your telepathic utterances, but the creature must be able to understand at least one language."
                     }
                 }
@@ -1033,7 +1063,7 @@
                             "quarterstaff": 1
                         },
                         {
-                            "dagger":1
+                            "dagger": 1
                         }
                     ],
                     [
@@ -1043,7 +1073,6 @@
                         {
                             "arcane focus": 1
                         }
-                    
                     ],
                     [
                         {
@@ -1061,7 +1090,7 @@
                 ]
             },
             "spells": {
-                "cantrips known":3,
+                "cantrips known": 3,
                 "spell slots": 2,
                 "ability_modifier": "int",
                 "focus": "arcane focus",
@@ -1069,9 +1098,9 @@
             },
             "features": {
                 "spellbook": "Spellbook: At 1st level, you have a spellbook containing six 1st-level wizard spells of your choice. Your spellbook is the repository of the wizard spells you know, except your cantrips, which are fixed in your mind. The spells that you add to your spellbook as you gain levels reflect the arcane research you conduct on your own, as well as intellectual breakthroughs you have had about the nature of the multiverse. You might find other spells during your adventures. You could discover a spell recorded on a scroll in an evil wizard's chest, for example, or in a dusty tome in an ancient library.",
-                "copying a spell":"Copying a Spell into the Book. When you find a wizard spell of 1st level or higher, you can add it to your spellbook if it is of a spell level you can prepare and if you can spare the time to decipher and copy it. Copying a spell into your spellbook involves reproducing the basic form of the spell, then deciphering the unique system of notation used by the wizard who wrote it. You must practice the spell until you understand the sounds or gestures required, then transcribe it into your spellbook using your own notation.For each level of the spell, the process takes 2 hours and costs 50 gp. The cost represents material components you expend as you experiment with the spell to master it, as well as the fine inks you need to record it. Once you have spent this time and money, you can prepare the spell just like your other spells.",
-                "replacing the book":"Replacing the Book. You can copy a spell from your own spellbook into another book-for example, if you want to make a backup copy of your spellbook. This is just like copying a new spell into your spellbook, but faster and easier, since you understand your own notation and already know how to cast the spell. You need spend only 1 hour and 10 gp for each level of the copied spell.If you lose your spellbook, you can use the same procedure to transcribe the spells that you have prepared into a new spellbook. Filling out the remainder of your spellbook requires you to find new spells to do so, as normal. For this reason, many wizards keep backup spellbooks in a safe place.",
-                "book appearance":"The Book's Appearance. Your spellbook is a unique compilation of spells, with its own decorative flourishes and margin notes. It might be a plain, functional leather volume that you received as a gift from your master, a finely bound gilt-edged tome you found in an ancient library or even a loose collection of notes scrounged together after you lost your previous spellbook in a mishap."
+                "copying a spell": "Copying a Spell into the Book. When you find a wizard spell of 1st level or higher, you can add it to your spellbook if it is of a spell level you can prepare and if you can spare the time to decipher and copy it. Copying a spell into your spellbook involves reproducing the basic form of the spell, then deciphering the unique system of notation used by the wizard who wrote it. You must practice the spell until you understand the sounds or gestures required, then transcribe it into your spellbook using your own notation.For each level of the spell, the process takes 2 hours and costs 50 gp. The cost represents material components you expend as you experiment with the spell to master it, as well as the fine inks you need to record it. Once you have spent this time and money, you can prepare the spell just like your other spells.",
+                "replacing the book": "Replacing the Book. You can copy a spell from your own spellbook into another book-for example, if you want to make a backup copy of your spellbook. This is just like copying a new spell into your spellbook, but faster and easier, since you understand your own notation and already know how to cast the spell. You need spend only 1 hour and 10 gp for each level of the copied spell.If you lose your spellbook, you can use the same procedure to transcribe the spells that you have prepared into a new spellbook. Filling out the remainder of your spellbook requires you to find new spells to do so, as normal. For this reason, many wizards keep backup spellbooks in a safe place.",
+                "book appearance": "The Book's Appearance. Your spellbook is a unique compilation of spells, with its own decorative flourishes and margin notes. It might be a plain, functional leather volume that you received as a gift from your master, a finely bound gilt-edged tome you found in an ancient library or even a loose collection of notes scrounged together after you lost your previous spellbook in a mishap."
             }
         }
     }
